@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_DB: products-api
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: rootbr123
+    ports:
+      - "5432:5432"
